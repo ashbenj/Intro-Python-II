@@ -1,23 +1,5 @@
-from room import Room
+#from room import Room
 
-
-# Add input parser to ask player to choose a room
-selection = input('Choose a room: outside, foyer, grand overlook, narrow passage, or treasure chamber:\n ')
-print(selection)
-
-# If player chooses outside, then they move to outside room
-if selection.lower().strip() == "outside":
-    selection = input("You are now Outside of the Cave Entrance")
-if selection.lower().strip() == "foyer":
-    selection = input("You are now in the Foyer")
-if selection.lower().strip() == "grand overlook":
-    selection = input("You are now at the Grand Overlook")
-if selection.lower().strip() == "narrow passage":
-    selection = input("You are now in the Narrow Passage")
-if selection.lower().strip() == "treasure chamber":
-    selection = input("You are now in the Treasure Chamber")
-else:
-    print("Choose a room!:\n")
 # Declare all the rooms
 
 room = {
@@ -54,6 +36,23 @@ room['treasure'].s_to = room['narrow']
 #
 # Main
 #
+# Add input parser to ask player to choose a room
+selection = input('Choose a direction: North, South, East, or West:\n ')
+print(selection)
+
+# If player chooses outside, then they move to outside room
+if selection.lower().strip() == "north":
+    selection = input("You are now Outside of the Cave Entrance")
+if selection.lower().strip() == "south":
+    selection = input("You are now in the Foyer")
+if selection.lower().strip() == "grand overlook":
+    selection = input("You are now at the Grand Overlook")
+if selection.lower().strip() == "narrow passage":
+    selection = input("You are now in the Narrow Passage")
+if selection.lower().strip() == "treasure chamber":
+    selection = input("You are now in the Treasure Chamber")
+else:
+    print("Choose a room!:\n")
 
 # Make a new player object that is currently in the 'outside' room.
 

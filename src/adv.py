@@ -1,5 +1,14 @@
 from room import Room
 
+# Add input parser
+selection = input('Choose a room: outside, foyer, grand overlook, narrow passage, or treasure chamber:\n ')
+print(selection)
+
+if selection.lower().strip() == "outside":
+    selection = input("outside")
+else:
+    print("You must choose a room!!\n ")
+
 # Declare all the rooms
 
 room = {

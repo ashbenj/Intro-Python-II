@@ -7,3 +7,10 @@ class Room:
         self.name = name
         self.direction = direction
         self.description = description
+
+
+room_1 = Room('Outside', 'North', 'Outside Cave Entrance')
+room_2 = Room('Foyer', 'South', 'Dim light filters in from the south. Dusty passages run north and east.')
+room_3 = Room('Outside', 'North', 'Outside Cave Entrace')
+room_4 = Room('Outside', 'North', 'Outside Cave Entrace')
+room_5 = Room('Outside', 'North', 'Outside Cave Entrace')

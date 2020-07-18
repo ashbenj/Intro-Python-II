@@ -1,14 +1,23 @@
 from room import Room
 
-# Add input parser
+
+# Add input parser to ask player to choose a room
 selection = input('Choose a room: outside, foyer, grand overlook, narrow passage, or treasure chamber:\n ')
 print(selection)
 
+# If player chooses outside, then they move to outside room
 if selection.lower().strip() == "outside":
-    selection = input("outside")
+    selection = input("You are now Outside of the Cave Entrance")
+if selection.lower().strip() == "foyer":
+    selection = input("You are now in the Foyer")
+if selection.lower().strip() == "grand overlook":
+    selection = input("You are now at the Grand Overlook")
+if selection.lower().strip() == "narrow passage":
+    selection = input("You are now in the Narrow Passage")
+if selection.lower().strip() == "treasure chamber":
+    selection = input("You are now in the Treasure Chamber")
 else:
-    print("You must choose a room!!\n ")
-
+    print("Choose a room!:\n")
 # Declare all the rooms
 
 room = {
